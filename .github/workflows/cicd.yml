@@ -23,7 +23,7 @@ jobs:
               run: npm run build
 
             - name: Run tests
-              run: npmt est
+              run: npm test
 
             - name: Send email notification if build fail
               if: failure()
